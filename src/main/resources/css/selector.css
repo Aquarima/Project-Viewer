@@ -1,0 +1,21 @@
+#background {
+-fx-background-color: #342933;
+}
+
+#label {
+-fx-text-fill: white;
+-fx-font-family: Calibri;
+}
+
+#text_field {
+
+}
+
+#button {
+-fx-background-color:  #573F54;
+-fx-background-radius: 15;
+-fx-border-color: #CC98C6;
+-fx-border-width: 1;
+-fx-border-radius: 15;
+-fx-text-fill: white;
+}

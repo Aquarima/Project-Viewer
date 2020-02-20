@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exalow.application.controller.MenuController">
+   <children>
+      <HBox layoutX="207.0" layoutY="273.0" />
+      <Label id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="55.0" prefWidth="362.0" text="Project Viewer" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="53.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <stylesheets>
+            <URL value="@../../../../../resources/style/menu.css" />
+            <URL value="@../css/menu.css" />
+         </stylesheets>
+      </Label>
+      <Label id="version" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="117.0" text="Version BETA" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <stylesheets>
+            <URL value="@../../../../../resources/style/menu.css" />
+            <URL value="@../css/menu.css" />
+         </stylesheets>
+      </Label>
+      <VBox alignment="CENTER" layoutX="151.0" layoutY="194.0" prefHeight="112.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button id="button" fx:id="create" cancelButton="true" mnemonicParsing="false" onAction="#onCreateRequest" prefHeight="35.0" prefWidth="190.0" text="  New Project" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../create.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+               <stylesheets>
+                  <URL value="@../../../../../resources/style/menu.css" />
+                  <URL value="@../css/menu.css" />
+               </stylesheets>
+            </Button>
+            <Button id="button" fx:id="open" mnemonicParsing="false" onAction="#onLoadRequest" prefHeight="35.0" prefWidth="190.0" text="  Open Project" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../open.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+               <stylesheets>
+                  <URL value="@../../../../../resources/style/menu.css" />
+                  <URL value="@../css/menu.css" />
+               </stylesheets>
+            </Button>
+            <Button id="button" fx:id="exit" mnemonicParsing="false" onAction="#onExitRequest" prefHeight="32.0" prefWidth="131.0" text="Exit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+               <stylesheets>
+                  <URL value="@../../../../../resources/style/menu.css" />
+                  <URL value="@../css/menu.css" />
+               </stylesheets>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../../../../resources/style/menu.css" />
+      <URL value="@../css/menu.css" />
+   </stylesheets>
+</AnchorPane>
